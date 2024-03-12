@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html,
+  body {
+    @apply font-ff;
+  }
+  .containerr {
+    @apply flex items-center justify-center px-4;
+  }
+  .input {
+    @apply border border-paleBlue pl-6 pr-16 py-2 placeholder:text-sm placeholder:text-paleBlue focus:outline-blue rounded-full;
+  }
+  .input-active {
+    @apply border-lightRed;
+  }
+  .errorMsg-active {
+    @apply text-lightRed text-xs italic sm:pl-pl_5 pl-0 sm:translate-y-8 translate-y-12;
+  }
+  .button-active {
+    @apply sm:mt-0 mt-8;
+  }
+  .fa-brands {
+    @apply border border-paleBlue p-2 text-blue hover:text-white hover:bg-blue transition ease-in-out delay-75 rounded-full;
+  }
+}

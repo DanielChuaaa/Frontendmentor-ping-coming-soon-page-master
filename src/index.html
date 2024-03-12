@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <section>
+        <div class="containerr">
+          <div class="mt-12">
+            <div class="flex flex-col items-center">
+              <img src="../images/logo.svg" alt="logo" class="w-14" />
+              <h1 class="text-xl sm:text-4xl font-light text-gray mt-8">We are launching <span class="font-bold text-VeryDarkBlue">soon!</span></h1>
+              <p class="sm:text-sm text-xs font-normal mt-4">Subscribe and get notified</p>
+            </div>
+
+            <form action="" onsubmit="return errorState()" novalidate>
+              <div class="flex flex-col sm:flex-row gap-2 items-center mt-6">
+                <input class="input" type="email" name="email" id="email" placeholder="Your email address..." required />
+
+                <p class="absolute" id="errorMsg"></p>
+
+                <button
+                  class="button text-white bg-blue hover:bg-paleBlue focus:bg-blue transitionn ease-out delay-75 px-px_28 py-3 text-xs shadow-lg shadow-paleBlue rounded-full"
+                >
+                  Notify Me
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <section>
+      <div class="containerr">
+        <img src="/images/illustration-dashboard.png" alt="dashboard" class="sm:w-w_96 w-80 mt-16" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="containerr">
+        <div class="sm:mt-12 mt-20 mb-10">
+          <div class="socialLinks flex gap-4 justify-center">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="text-gray text-xs mt-8">
+            <p>© Copyright Ping. All rights reserverd.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
